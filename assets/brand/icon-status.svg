@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="512" height="512" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="112" fill="#1E6B4A"/>
+  <!-- list with check rows -->
+  <g fill="#FBF7F1">
+    <rect x="172" y="156" width="168" height="16" rx="8"/>
+    <rect x="172" y="212" width="168" height="16" rx="8" opacity="0.55"/>
+    <rect x="172" y="268" width="168" height="16" rx="8" opacity="0.55"/>
+  </g>
+  <!-- status toggles -->
+  <g fill="none" stroke="#C77B3F" stroke-width="24" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M188 156 l20 20 l34 -34"/>
+    <path d="M188 212 l20 20 l34 -34"/>
+  </g>
+</svg>

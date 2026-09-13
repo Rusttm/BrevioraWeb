@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="512" height="512" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="112" fill="#91DECD"/>
+  <!-- документ (УПД из Диадока) -->
+  <path d="M184 104 h112 l48 48 v116 h-160 z" fill="#FFFFFF"/>
+  <path d="M296 104 v48 h48" fill="#2E8E7D"/>
+  <rect x="208" y="180" width="88" height="12" rx="6" fill="#91DECD"/>
+  <rect x="208" y="206" width="60" height="12" rx="6" fill="#91DECD"/>
+  <!-- стрелка вниз: из Диадока в МойСклад -->
+  <path d="M244 290 h24 v44 h-24 z" fill="#2E8E7D"/>
+  <path d="M256 372 L224 334 L288 334 Z" fill="#2E8E7D"/>
+  <!-- приёмка в МойСклад -->
+  <rect x="172" y="384" width="168" height="44" rx="16" fill="#7FCBFA"/>
+</svg>

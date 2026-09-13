@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Breviora — обмен документами между МойСклад и Диадок</title>
+  <meta name="description" content="Breviora автоматизирует обмен документами между МойСклад и Контур.Диадок: импорт УПД из Диадока, отправка УПД на подпись, формирование XML-файлов для Озон.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="assets/brand/breviora-mark.svg" type="image/svg+xml">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="/">
+      <img src="assets/brand/breviora-mark.svg" alt="Breviora">
+      <span>
+        <span class="name">Breviora</span>
+        <span class="sub">МойСклад × Диадок</span>
+      </span>
+    </a>
+    <nav class="site">
+      <a href="#problem">Зачем</a>
+      <a href="#solutions">Решения</a>
+      <a href="#how">Как работает</a>
+      <a href="#pricing">Цены</a>
+      <a class="btn btn-primary" href="#install">Установить</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Интеграции для МойСклад</span>
+    <h1>Документы между МойСклад и Диадоком — <em>автоматически</em>, без ручного переноса</h1>
+    <p class="lede">Breviora — набор решений из каталога приложений МойСклад. Подписанные УПД сами превращаются в приёмки, исходящие отгрузки сами уходят в Диадок на подпись.</p>
+    <div class="actions">
+      <a class="btn btn-accent" href="#solutions">Смотреть решения</a>
+      <a class="btn btn-ghost" href="https://online.moysklad.ru/app/">Открыть каталог МойСклад</a>
+    </div>
+    <p class="note">Установка в один клик из каталога приложений. Пробный период — 14 дней.</p>
+  </div>
+</section>
+
+<section id="problem">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">Зачем это нужно</div>
+      <h2>Ручной обмен документами отнимает время и плодит ошибки</h2>
+      <p>Если вы работаете с ЭДО через Контур.Диадок и учитываете товары в МойСклад, документы приходится переносить вручную.</p>
+    </div>
+    <div class="problem-list">
+      <div class="item">
+        <div class="num">01</div>
+        <div>
+          <h3>Приёмки вводятся руками</h3>
+          <p>Поставщик прислал подписанный УПД в Диадок — и его нужно вручную забивать в МойСклад как приёмку. Каждая позиция, количество, цена, НДС.</p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="num">02</div>
+        <div>
+          <h3>Исходящие УПД собирают вручную</h3>
+          <p>Отгрузку оформили в МойСклад, а УПД для контрагента формируют отдельно — вручную или в сторонней программе, с риском расхождений.</p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="num">03</div>
+        <div>
+          <h3>Маркетплейсы требуют свой формат</h3>
+          <p>Для Озон нужен XML определённого вида. Переделывать документ под каждый канал — отдельная рутина и источник ошибок.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="solutions">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">Решения</div>
+      <h2>Три независимых приложения</h2>
+      <p>Устанавливайте только то, что нужно. Каждое решение работает отдельно в каталоге МойСклад.</p>
+    </div>
+    <div class="solutions">
+      <div class="solution">
+        <div class="glyph"><img src="assets/brand/icon-import.svg" alt=""></div>
+        <div class="body">
+          <h3>Импорт УПД из Диадока</h3>
+          <p>Забирает подписанные входящие УПД из Диадока и создаёт приёмки в МойСклад. Организация и контрагент подбираются по ИНН, позиции — по артикулу.</p>
+        </div>
+        <div class="price"><strong>2 900 ₽/мес</strong><a href="instructions/import.html">Инструкция →</a></div>
+      </div>
+      <div class="solution">
+        <div class="glyph"><img src="assets/brand/icon-push.svg" alt=""></div>
+        <div class="body">
+          <h3>Отправка УПД в Диадок</h3>
+          <p>Формирует стандартный УПД из отгрузки МойСклад и отправляет его в Диадок как черновик на подпись.</p>
+        </div>
+        <div class="price"><strong>1 900 ₽/мес</strong><a href="instructions/push.html">Инструкция →</a></div>
+      </div>
+      <div class="solution">
+        <div class="glyph"><img src="assets/brand/icon-xml.svg" alt=""></div>
+        <div class="body">
+          <h3>XML-файл для Озон</h3>
+          <p>Создаёт XML в формате Озон для отгрузки и прикрепляет файл к документу в МойСклад.</p>
+        </div>
+        <div class="price"><strong>1 500 ₽/мес</strong><a href="instructions/xml.html">Инструкция →</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">Как это работает</div>
+      <h2>Три шага до автоматизации</h2>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <span class="n">1</span>
+        <h3>Установите решение</h3>
+        <p>Откройте каталог приложений в МойСклад, найдите Breviora и нажмите «Установить». Подтвердите доступ к аккаунту.</p>
+      </div>
+      <div class="step">
+        <span class="n">2</span>
+        <h3>Подключите Диадок</h3>
+        <p>В настройках решения авторизуйтесь в Контур.Диадок через ваш аккаунт — это одноразовый вход с 2FA.</p>
+      </div>
+      <div class="step">
+        <span class="n">3</span>
+        <h3>Работайте как обычно</h3>
+        <p>Кнопки появляются прямо на документах в МойСклад. Нажимайте — остальное решение делает само.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="pricing">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">Цены</div>
+      <h2>Подписка помесячно</h2>
+      <p>Оплата — через биллинг МойСклад, как и само решение. Пробный период 14 дней на каждый тариф.</p>
+    </div>
+    <div class="pricing">
+      <div class="plan highlight">
+        <span class="flag">Флагман</span>
+        <div class="pname">Импорт УПД</div>
+        <p class="pdesc">Входящие УПД → приёмки автоматически.</p>
+        <div class="pcost">2 900 <span>₽/мес</span></div>
+      </div>
+      <div class="plan">
+        <div class="pname">Отправка УПД</div>
+        <p class="pdesc">Отгрузки → УПД в Диадок на подпись.</p>
+        <div class="pcost">1 900 <span>₽/мес</span></div>
+      </div>
+      <div class="plan">
+        <div class="pname">XML-файл для Озон</div>
+        <p class="pdesc">Отгрузки → XML в формате Озон.</p>
+        <div class="pcost">1 500 <span>₽/мес</span></div>
+      </div>
+    </div>
+    <p class="pricing-note">Цены предварительные и могут быть скорректированы до публикации в каталоге.</p>
+  </div>
+</section>
+
+<section class="cta" id="install">
+  <div class="wrap">
+    <h2>Начните с пробного периода</h2>
+    <p>Установите нужное решение и проверьте его на своих документах в течение 14 дней — бесплатно.</p>
+    <a class="btn btn-accent" href="https://online.moysklad.ru/app/">Установить из каталога</a>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div>
+      <h4>Поддержка</h4>
+      <p>По вопросам установки и работы решений пишите на <a href="mailto:support@breviora.ru">support@breviora.ru</a>.</p>
+    </div>
+    <div>
+      <h4>Разработчик</h4>
+      <p>Breviora — решения для документооборота МойСклад.</p>
+      <p><a href="https://moisklad-api.breviora.ru">moisklad-api.breviora.ru</a></p>
+    </div>
+    <div class="copyright">© 2026 Breviora. Все решения доступны в каталоге приложений МойСклад.</div>
+  </div>
+</footer>
+
+</body>
+</html>

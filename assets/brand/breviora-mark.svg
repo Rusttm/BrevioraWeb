@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="512" height="512" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="112" fill="#4A5158"/>
+  <!-- документ -->
+  <path d="M186 128 h92 l44 44 v144 h-136 z" fill="#FFFFFF"/>
+  <path d="M278 128 v44 h44" fill="#6B727A"/>
+  <rect x="208" y="200" width="82" height="13" rx="6" fill="#4A5158" opacity="0.85"/>
+  <rect x="208" y="228" width="56" height="13" rx="6" fill="#4A5158" opacity="0.45"/>
+  <!-- обмен: Диадок (бирюза) вправо, МойСклад (синий) влево -->
+  <path d="M196 344 h60 v18 h-60 z" fill="#91DECD"/>
+  <path d="M292 336 l36 17 -36 17 z" fill="#91DECD"/>
+  <path d="M256 344 h60 v18 h-60 z" fill="#7FCBFA"/>
+  <path d="M220 336 l-36 17 36 17 z" fill="#7FCBFA"/>
+</svg>

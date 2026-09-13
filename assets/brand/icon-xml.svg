@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="512" height="512" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="112" fill="#255AF6"/>
+  <!-- документ (XML) -->
+  <path d="M184 108 h112 l48 48 v144 h-160 z" fill="#FFFFFF"/>
+  <path d="M296 108 v48 h48" fill="#8FD9CB"/>
+  <!-- код-скобки </> (Диадок-цвет, по центру) -->
+  <g fill="none" stroke="#2E8E7D" stroke-width="22" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M234 208 l-34 32 34 32"/>
+    <path d="M294 208 l34 32 -34 32"/>
+    <path d="M264 200 l0 84"/>
+  </g>
+</svg>
