@@ -47,20 +47,20 @@
     </section>
 
     <section class="manual-step">
-      <h2><span class="n">2</span> Нажмите кнопку на Отгрузке</h2>
-      <p>Перейдите в раздел «Продажи → Отгрузки», выберите нужную отгрузку и нажмите «Решения» → «Создать». Решение соберёт XML, прикрепит его к документу и (если подключён Диадок) отправит туда же.</p>
-      <figure class="shot">
-        <img class="shot-img" src="../assets/screenshots/xml-2-button.png" alt="Раздел «Продажи → Отгрузки», меню кнопки «Решения» с пунктом «Создать»">
-        <figcaption class="shot-desc"><strong>Раздел «Продажи → Отгрузки»</strong> — пункт «Создать» в меню кнопки «Решения»</figcaption>
-      </figure>
-    </section>
-
-    <section class="manual-step">
-      <h2><span class="n">3</span> Подключите Диадок (опционально)</h2>
+      <h2><span class="n">2</span> Подключите Диадок (опционально)</h2>
       <p>Чтобы файл дополнительно уходил в Контур.Диадок, в настройках решения заполните раздел «Приложение в Диадоке» и подключите Диадок. Без этого шага XML просто прикрепляется в МойСклад.</p>
       <figure class="shot">
         <img class="shot-img" src="../assets/screenshots/xml-3-settings.png" alt="Настройки решения, раздел «Приложение в Диадоке»">
         <figcaption class="shot-desc"><strong>Настройки решения, раздел «Приложение в Диадоке»</strong></figcaption>
+      </figure>
+    </section>
+
+    <section class="manual-step">
+      <h2><span class="n">3</span> Нажмите кнопку на Отгрузке</h2>
+      <p>Перейдите в раздел «Продажи → Отгрузки», выберите нужную отгрузку и нажмите «Решения» → «Создать». Решение соберёт XML, прикрепит его к документу и (если подключён Диадок) отправит туда же.</p>
+      <figure class="shot">
+        <img class="shot-img" src="../assets/screenshots/xml-2-button.png" alt="Раздел «Продажи → Отгрузки», меню кнопки «Решения» с пунктом «Создать»">
+        <figcaption class="shot-desc"><strong>Раздел «Продажи → Отгрузки»</strong> — пункт «Создать» в меню кнопки «Решения»</figcaption>
       </figure>
     </section>
 
@@ -75,7 +75,15 @@
 
     <section class="manual-step">
       <h2><span class="n">5</span> Что решение берёт из МойСклад</h2>
-      <p>Чтобы Озон принял УПД, в отгрузке и карточках товаров должны быть заполнены четыре вещи. Решение берёт их из МойСклад и подставляет в файл.</p>
+      <p>Чтобы Озон принял УПД, в МойСклад должны быть заполнены четыре поля:</p>
+      <ul class="field-list">
+        <li><strong>Штрихкод товара</strong> — в карточке товара, блок «Штрихкоды товара» (тип EAN13).</li>
+        <li><strong>Артикул OZON</strong> — дополнительное поле в карточке товара; рядом могут быть поля других маркетплейсов — решение читает только «Артикул OZON».</li>
+        <li><strong>Адрес доставки</strong> — поле в карточке отгрузки.</li>
+        <li><strong>Номер заказа Озон</strong> — поле «Комментарий» в карточке отгрузки.</li>
+      </ul>
+      <p>Решение подставляет их в файл так:</p>
+      <h3 class="sub-head">Штрихкод и ID товара — в таблицу УПД</h3>
       <figure class="shot">
         <img class="shot-img" src="../assets/screenshots/xml-upd-fields.png" alt="Таблица УПД: под наименованием товара строка «ID товара» и «штрихкод»">
         <figcaption class="shot-desc"><strong>В УПД, под наименованием каждой позиции</strong> — ID товара и штрихкод</figcaption>
@@ -86,8 +94,9 @@
       </figure>
       <figure class="shot">
         <img class="shot-img" src="../assets/screenshots/xml-ms-article.png" alt="Карточка товара, дополнительные поля «Артикул OZON»">
-        <figcaption class="shot-desc"><strong>Откуда берётся ID товара</strong> — дополнительное поле «Артикул OZON» в карточке товара (рядом могут быть поля других маркетплейсов — решение читает только «Артикул OZON»)</figcaption>
+        <figcaption class="shot-desc"><strong>Откуда берётся ID товара</strong> — дополнительное поле «Артикул OZON» в карточке товара</figcaption>
       </figure>
+      <h3 class="sub-head">Адрес и номер заказа — в реквизиты УПД</h3>
       <figure class="shot">
         <img class="shot-img" src="../assets/screenshots/xml-upd-address.png" alt="УПД: поле «Грузополучатель и его адрес»">
         <figcaption class="shot-desc"><strong>В УПД</strong> — «Грузополучатель и его адрес»</figcaption>

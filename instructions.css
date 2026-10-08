@@ -34,3 +34,6 @@ article.manual { padding: 48px 0 80px; }
   font-size: 15px; color: var(--ink-soft);
 }
 .manual-note strong { color: var(--ink); }
+.manual-step .field-list { margin: 0 0 18px; padding-left: 22px; color: var(--ink-soft); }
+.manual-step .field-list li { margin-bottom: 6px; }
+.manual-step .sub-head { font-size: 17px; font-weight: 600; margin: 26px 0 12px; color: var(--ink); }
