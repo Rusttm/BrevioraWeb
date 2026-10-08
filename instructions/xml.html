@@ -74,7 +74,36 @@
     </section>
 
     <section class="manual-step">
-      <h2><span class="n">5</span> Как отключить Диадок (если был подключён)</h2>
+      <h2><span class="n">5</span> Что решение берёт из МойСклад</h2>
+      <p>Чтобы Озон принял УПД, в отгрузке и карточках товаров должны быть заполнены четыре вещи. Решение берёт их из МойСклад и подставляет в файл.</p>
+      <figure class="shot">
+        <img class="shot-img" src="../assets/screenshots/xml-upd-fields.png" alt="Таблица УПД: под наименованием товара строка «ID товара» и «штрихкод»">
+        <figcaption class="shot-desc"><strong>В УПД, под наименованием каждой позиции</strong> — ID товара и штрихкод</figcaption>
+      </figure>
+      <figure class="shot">
+        <img class="shot-img" src="../assets/screenshots/xml-ms-barcode.png" alt="Карточка товара в МойСклад, блок «Штрихкоды товара», код EAN13">
+        <figcaption class="shot-desc"><strong>Откуда берётся штрихкод</strong> — блок «Штрихкоды товара» в карточке товара (тип EAN13)</figcaption>
+      </figure>
+      <figure class="shot">
+        <img class="shot-img" src="../assets/screenshots/xml-ms-article.png" alt="Карточка товара, дополнительные поля «Артикул OZON»">
+        <figcaption class="shot-desc"><strong>Откуда берётся ID товара</strong> — дополнительное поле «Артикул OZON» в карточке товара</figcaption>
+      </figure>
+      <figure class="shot">
+        <img class="shot-img" src="../assets/screenshots/xml-upd-address.png" alt="УПД: поле «Грузополучатель и его адрес»">
+        <figcaption class="shot-desc"><strong>В УПД</strong> — «Грузополучатель и его адрес»</figcaption>
+      </figure>
+      <figure class="shot">
+        <img class="shot-img" src="../assets/screenshots/xml-upd-order.png" alt="УПД: строка «Иные сведения», номер заказа">
+        <figcaption class="shot-desc"><strong>В УПД, «Иные сведения»</strong> — номер заказа Озон</figcaption>
+      </figure>
+      <figure class="shot">
+        <img class="shot-img" src="../assets/screenshots/xml-ms-adress-order.png" alt="Карточка отгрузки в МойСклад: поля «Адрес доставки» и «Комментарий» с номером заказа">
+        <figcaption class="shot-desc"><strong>Откуда берутся адрес и номер заказа</strong> — поля «Адрес доставки» и «Комментарий» в карточке отгрузки</figcaption>
+      </figure>
+    </section>
+
+    <section class="manual-step">
+      <h2><span class="n">6</span> Как отключить Диадок (если был подключён)</h2>
       <p>Если вы подключали Диадок для автоотправки и хотите его отвязать, откройте настройки решения и нажмите «Отключить» в разделе «Диадок». XML-файл продолжит создаваться и прикрепляться к отгрузке — просто не будет уходить в Диадок.</p>
       <figure class="shot">
         <img class="shot-img" src="../assets/screenshots/xml-3-settings.png" alt="Раздел «Диадок» в настройках решения">
