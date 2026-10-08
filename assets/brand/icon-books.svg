@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="512" height="512" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="112" fill="#91DECD"/>
+  <!-- корка книги -->
+  <rect x="184" y="96" width="44" height="296" rx="14" fill="#7FCBFA"/>
+  <!-- страница книги -->
+  <rect x="220" y="88" width="212" height="312" rx="16" fill="#FFFFFF"/>
+  <!-- строки таблицы -->
+  <rect x="244" y="120" width="164" height="16" rx="8" fill="#2E8E7D"/>
+  <rect x="244" y="156" width="164" height="10" rx="5" fill="#91DECD"/>
+  <rect x="244" y="182" width="128" height="10" rx="5" fill="#91DECD"/>
+  <rect x="244" y="208" width="164" height="10" rx="5" fill="#91DECD"/>
+  <rect x="244" y="234" width="108" height="10" rx="5" fill="#91DECD"/>
+  <rect x="244" y="260" width="164" height="10" rx="5" fill="#91DECD"/>
+  <!-- итоговая строка -->
+  <rect x="244" y="300" width="164" height="16" rx="8" fill="#2E8E7D"/>
+</svg>

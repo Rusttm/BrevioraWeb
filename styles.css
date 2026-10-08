@@ -131,7 +131,8 @@ section.alt { background: var(--paper-2); border-top: 1px solid var(--border); b
 .step p { margin: 0; color: var(--ink-soft); font-size: 15px; }
 
 /* ---------- pricing ---------- */
-.pricing { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.pricing { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+@media (min-width: 1000px) { .pricing { grid-template-columns: repeat(4, 1fr); } }
 .plan { padding: 26px 22px; background: var(--white); border: 1px solid var(--border); border-radius: 14px; display: flex; flex-direction: column; }
 .plan.highlight { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
 .plan .pname { font-weight: 600; font-size: 17px; margin-bottom: 4px; }
