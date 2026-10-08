@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Книга покупок и продаж — инструкция | Breviora</title>
+  <meta name="description" content="Как сформировать книги покупок и продаж в Excel из данных МойСклад: установка, настройка, построение отчёта.">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../instructions.css">
+  <link rel="icon" href="../assets/brand/breviora-mark.svg" type="image/svg+xml">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="../index.html">
+      <img src="../assets/brand/breviora-mark.svg" alt="Breviora">
+      <span>
+        <span class="name">Breviora</span>
+        <span class="sub">МойСклад × Диадок</span>
+      </span>
+    </a>
+    <nav class="site">
+      <a href="../index.html">← Все решения</a>
+      <a href="import.html">Импорт из Диадока</a>
+      <a href="push.html">Отправка в Диадок</a>
+      <a href="xml.html">XML для Озон</a>
+    </nav>
+  </div>
+</header>
+
+<article class="manual">
+  <div class="wrap">
+    <header class="manual-head">
+      <span class="kicker">Инструкция</span>
+      <h1>Книга покупок и продаж</h1>
+      <p class="lede">Решение формирует книги покупок и продаж в формате Excel (.xlsx) по данным МойСклад — по отгрузкам, розничным продажам, приёмкам и заказам поставщикам. Работает без внешних сервисов: всё, что нужно, — аккаунт МойСклад.</p>
+    </header>
+
+    <section class="manual-step">
+      <h2><span class="n">1</span> Установите решение</h2>
+      <p>Откройте раздел «Решения» в МойСклад, найдите «Книга покупок и продаж» и нажмите «Установить». Подтвердите доступ к аккаунту.</p>
+      <figure class="shot">
+        <div class="shot-box">
+          <span class="shot-tag">Скриншот</span>
+          <p class="shot-desc"><strong>Раздел «Решения»</strong> — карточка приложения «Книга покупок и продаж» с кнопкой «Установить»</p>
+          <p class="shot-file">assets/screenshots/books-1-install.png</p>
+        </div>
+      </figure>
+    </section>
+
+    <section class="manual-step">
+      <h2><span class="n">2</span> Настройте книги</h2>
+      <p>Откройте приложение (Решения → «Книга покупок и продаж»). Выберите организацию для книги продаж и организацию для книги покупок. При необходимости исключите отдельных контрагентов из книги продаж и поставщиков из книги покупок — начните вводить имя или ИНН и выберите из списка. Нажмите «Сохранить». Достаточно заполнить хотя бы один блок.</p>
+      <figure class="shot">
+        <div class="shot-box">
+          <span class="shot-tag">Скриншот</span>
+          <p class="shot-desc"><strong>Настройки решения</strong> — блоки «Настройки книги продаж» и «Настройки книги покупок», поля «Исключённые контрагенты» / «Исключённые поставщики»</p>
+          <p class="shot-file">assets/screenshots/books-2-settings.png</p>
+        </div>
+      </figure>
+    </section>
+
+    <section class="manual-step">
+      <h2><span class="n">3</span> Постройте книгу продаж</h2>
+      <p>Перейдите в раздел «Продажи → Отгрузки» (или «Розничные продажи») и нажмите кнопку «Книга продаж» над списком. В открывшемся окне выберите организацию, даты начала и окончания периода, при необходимости измените код валюты (по умолчанию 643 — рубли) и снимите галочку «Сокращённая форма», если нужна полная форма книги. Нажмите «Сформировать».</p>
+      <figure class="shot">
+        <div class="shot-box">
+          <span class="shot-tag">Скриншот</span>
+          <p class="shot-desc"><strong>Раздел «Продажи → Отгрузки»</strong> — кнопка «Книга продаж» и окно с параметрами отчёта</p>
+          <p class="shot-file">assets/screenshots/books-3-sales.png</p>
+        </div>
+      </figure>
+    </section>
+
+    <section class="manual-step">
+      <h2><span class="n">4</span> Постройте книгу покупок</h2>
+      <p>Перейдите в раздел «Закупки → Приёмки» (или «Заказы поставщикам») и нажмите кнопку «Книга покупок» над списком. Параметры те же: организация, период, валюта, форма. Нажмите «Сформировать».</p>
+      <figure class="shot">
+        <div class="shot-box">
+          <span class="shot-tag">Скриншот</span>
+          <p class="shot-desc"><strong>Раздел «Закупки → Приёмки»</strong> — кнопка «Книга покупок» и окно с параметрами отчёта</p>
+          <p class="shot-file">assets/screenshots/books-4-purchases.png</p>
+        </div>
+      </figure>
+    </section>
+
+    <section class="manual-step">
+      <h2><span class="n">5</span> Готово</h2>
+      <p>Файл книги в формате .xlsx появится в «Загрузках» браузера. Формирование занимает одну–три минуты: решение собирает данные за весь выбранный период. Если соединение оборвалось, нажмите «Сформировать» ещё раз.</p>
+      <figure class="shot">
+        <div class="shot-box">
+          <span class="shot-tag">Скриншот</span>
+          <p class="shot-desc"><strong>Скачанный файл книги</strong> — открытая в Excel книга продаж</p>
+          <p class="shot-file">assets/screenshots/books-5-result.png</p>
+        </div>
+      </figure>
+    </section>
+
+    <div class="manual-note">
+      <strong>Что ещё полезно знать.</strong> Настройки хранятся на стороне вендора: при удалении и повторной установке решения выбор организации и исключённые контрагенты сохранятся. Внешние сервисы не используются — подключать и отключать нечего; для отказа от решения достаточно удалить его в разделе «Решения».
+    </div>
+  </div>
+</article>
+
+<footer class="site">
+  <div class="wrap">
+    <div>
+      <h4>Поддержка</h4>
+      <p><a href="mailto:support.breviora@mail.ru">support.breviora@mail.ru</a></p>
+    </div>
+    <div class="copyright">© 2026 Breviora</div>
+  </div>
+</footer>
+
+</body>
+</html>
