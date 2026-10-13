@@ -48,16 +48,32 @@
 
     <section class="manual-step">
       <h2><span class="n">2</span> Подключите Диадок</h2>
-      <p>Откройте настройки решения и нажмите «Подключить Диадок», затем авторизуйтесь в своём аккаунте Контур.Диадок. Без этого шага XML прикрепляется в МойСклад, но не уходит в Диадок.</p>
+      <p>Откройте настройки решения — секция «Интеграция с Диадок (Push XML)» со статусом «not configured». Нажмите «Подключить Диадок». Без этого шага XML прикрепляется в МойСклад, но не уходит в Диадок. Если Диадок уже был подключен из другого приложения Breviora на том же аккаунте МойСклад, подключение уже действует — шаг можно пропустить.</p>
       <figure class="shot">
-        <img class="shot-img" src="../assets/screenshots/push-2-diadoc.png" alt="Настройки решения, раздел «Диадок» с кнопкой «Подключить Диадок»">
-        <figcaption class="shot-desc"><strong>Настройки решения, раздел «Диадок»</strong> — кнопка «Подключить Диадок»</figcaption>
+        <img class="shot-img" src="../assets/screenshots/push-2a-settings.png" alt="Настройки решения: секция «Интеграция с Диадок (Push XML)», статус not configured, кнопка «Подключить Диадок»">
+        <figcaption class="shot-desc"><strong>Секция «Интеграция с Диадок (Push XML)»</strong> — до подключения</figcaption>
+      </figure>
+      <p>Откроется страница входа Контур. Введите логин и пароль вашего аккаунта Диадока.</p>
+      <figure class="shot">
+        <img class="shot-img" src="../assets/screenshots/push-2b-kontur-login.png" alt="Страница входа Контур: поля логина и пароля, кнопка «Войти»">
+        <figcaption class="shot-desc"><strong>Вход в аккаунт Контур.Диадок</strong></figcaption>
+      </figure>
+      <p>Контур запросит разрешение для приложения «Breviora»: доступ к e-mail, имени и данным для офлайн-доступа. Нажмите «Разрешить».</p>
+      <figure class="shot">
+        <img class="shot-img" src="../assets/screenshots/push-2c-kontur-consent.png" alt="Экран согласия Контур: приложение «Breviora» запрашивает доступы, кнопки «Разрешить» и «Отказать»">
+        <figcaption class="shot-desc"><strong>Разрешение доступов для приложения «Breviora»</strong></figcaption>
+      </figure>
+      <p>Вы вернётесь в настройки решения — статус сменится на «configured», а строка «Диадок:» покажет подключённый аккаунт. Подключение делается один раз.</p>
+      <figure class="shot">
+        <img class="shot-img" src="../assets/screenshots/push-2d-configured.png" alt="Настройки решения: статус configured, подключённый аккаунт Диадока, кнопка «Отключить»">
+        <figcaption class="shot-desc"><strong>Секция после подключения</strong> — статус «configured»</figcaption>
       </figure>
     </section>
 
     <section class="manual-step">
       <h2><span class="n">3</span> Нажмите кнопку на Отгрузке</h2>
       <p>Перейдите в раздел «Продажи → Отгрузки», выберите нужную отгрузку и нажмите «Решения» → «Отправить». Решение сформирует УПД, прикрепит его к документу и отправит в Диадок.</p>
+      <p class="box-caption"><strong>Важно:</strong> у отгрузки должна быть создана исходящая счёт-фактура (в МойСклад — «Счёт-фактура выданный», создаётся из отгрузки). Номер и дата УПД берутся из неё; без счёт-фактуры отправка не выполнится — решение сообщит об этом.</p>
       <figure class="shot">
         <img class="shot-img" src="../assets/screenshots/push-3-button.png" alt="Раздел «Продажи → Отгрузки», меню кнопки «Решения» с пунктом «Отправить»">
         <figcaption class="shot-desc"><strong>Раздел «Продажи → Отгрузки»</strong> — пункт «Отправить» в меню кнопки «Решения»</figcaption>
@@ -70,6 +86,10 @@
       <figure class="shot">
         <img class="shot-img" src="../assets/screenshots/push-4-result.png" alt="Уведомление «УПД отправлен в Диадок»">
         <figcaption class="shot-desc"><strong>Уведомление «УПД отправлен в Диадок»</strong></figcaption>
+      </figure>
+      <figure class="shot">
+        <img class="shot-img" src="../assets/screenshots/push-4b-diadoc-draft.jpg" alt="Диадок, раздел «Исходящие документы»: УПД в статусе «Требуется подписать и отправить»">
+        <figcaption class="shot-desc"><strong>Черновик УПД в разделе «Исходящие документы» Диадока</strong></figcaption>
       </figure>
     </section>
 
